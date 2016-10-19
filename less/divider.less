@@ -1,0 +1,50 @@
+.divider-v1  {
+  position: relative;
+  width: 50%;
+  font-size: 18px;
+  text-align: center;
+  overflow: hidden;
+  margin: 40px auto;
+}
+
+.divider-v1 .divider-v1-element {
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  font-style: italic;
+  font-family: Droid Serif, serif;
+}
+
+.divider-v1 .divider-v1-element:before, .divider-v1 .divider-v1-element:after {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 2000px;
+  height: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #c4c4c4;
+  content: " ";
+}
+
+.divider-v1 .divider-v1-element:before  {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.divider-v1 .divider-v1-element:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.divider-v1 .divider-v1-element-bg {
+  font-size: 14px;
+  color: #fff;
+  background: #00bcd4;
+  padding: 3px 10px;
+}
+
+.divider-v1 .divider-v1-icon {
+  font-size: 30px;
+  color: #00bcd4;
+}

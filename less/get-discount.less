@@ -1,0 +1,53 @@
+.get-discount {
+  background: #f3eedf;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__inner {
+    border: 1px solid #3d3d48;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 550px;
+    }
+  }
+  &__header {
+    font-size: 32px;
+    font-weight: 300;
+    background: #f3eedf;
+    padding: 0 20px;
+    margin: -17px 40px 0;
+    line-height: 1em;
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+    strong {
+      color: #fd6c58;
+      font-weight: 600;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 0 30px;
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+  &__link {
+    .btn {
+      &-order {
+        background: #fd9101;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 20px 25px;
+        line-height: 1em;
+        border: none;
+        &:hover,
+        &:focus {
+          background: #fd9101;
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

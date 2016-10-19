@@ -1,0 +1,191 @@
+/*------------------------------------------------------------------
+    [SAMPLES BLOCK]
+------------------------------------------------------------------*/
+
+.testimonials-qd () {
+  &-qd {
+    display: table;
+    width: 100%;
+    @media (min-width: 768px) and (max-width: 991px) {
+      height: 120px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      height: 160px;
+    }
+    @media (min-width: 1200px) {
+      height: 120px;
+    }
+    &__inner {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      @media (max-width: 767px) {
+        padding: 15px;
+      }
+    }
+  }
+  &-urgency {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 16px !important;
+    }
+  }
+}
+
+.samples {
+  background: @sky-light;
+      padding-top: 60px;
+  &-page {
+    padding-top: 80px;
+    & .testimonials {
+      .testimonials-qd ();
+    }
+  }
+  .owl-item .col {
+      width: 100%;
+  }
+  .col-1 .testimonials-user-picture {
+    background-position: 0px 0px;
+  }
+  .col-2 .testimonials-user-picture {
+    background-position: -54px 0px;
+  }
+  .col-3 .testimonials-user-picture {
+    background-position: -54px -54px;
+  }
+  .col-4 .testimonials-user-picture {
+    background-position: 0px -54px;
+  }
+  .col-5 .testimonials-user-picture {
+    background-position: -108px 0px;
+  } 
+  .col-6 .testimonials-user-picture {
+    background-position: -108px -54px;
+  }
+  .col-7 .testimonials-user-picture {
+    background-position: -54px -108px;
+  }
+  .col-8 .testimonials-user-picture {
+    background-position: -108px -108px;
+  }
+  .col-9 .testimonials-user-picture {
+    background-position: 0px -108px;
+  }
+  .col-10 .testimonials-user-picture {
+    background-position: -162px 0px;
+  }
+  .testimonials {
+    position: relative;
+    box-shadow: 0 4px 8px -3px #b6c1de;
+    margin: 15px 0 10px;
+    .testimonials-qd ();
+    &:before {
+      position: absolute;
+      top: -10px;
+      left: 9px;
+      width: 95%;
+      height: 20%;
+      z-index: 1;
+      background: #fdfdfd;
+      box-shadow: inset 0 10px 10px 0 #fdfdfe;
+      content: " ";
+    }
+    &-body {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+    }
+    .testimonials-user-picture {
+      margin: 0 auto 15px;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #ebeef6;
+      background-image: url(images/sprite.jpg);
+    } 
+    &-quote {
+      font-size: 18px;
+      font-style: italic;
+      @media (min-width: 768px) and (max-width: 1199px) {
+        font-size: 17px;
+      }
+    }
+    &-author {
+      font-size: 18px;
+      color: #00bcd4;
+      margin: 0 0 3px;
+      &-position {
+        display: block;
+        font-size: 15px;
+        color: #a2a2af;
+      }
+    }
+    &-details {
+      display: block;
+      font-size: 15px;
+      color: #a2a2af;
+    }
+    &-urgency,
+    &-price {
+      font-size: 22px;
+    }
+    & .fa {
+      &-check {
+        color: #79dd4f;
+      }
+    }
+  }
+
+
+  /* Owl Control Arrows v1 */
+  .owl-control-arrows-v1 .owl-arrow {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #34343c;
+    text-align: center;
+    background: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 7px;
+    margin: 0 3px;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  .owl-control-arrows-v1 .owl-arrow.arrow-left,
+  .owl-control-arrows-v1 .owl-arrow.arrow-right {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: -17.5px;
+  }
+  .owl-control-arrows-v1 .owl-arrow.arrow-left {
+    left: 0;
+  }
+  .owl-control-arrows-v1 .owl-arrow.arrow-right {
+    right: 0;
+  }
+  .owl-control-arrows-v1 .owl-arrow:hover {
+    color: #fff;
+    background: #00bcd4;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+}
+.home .samples {
+  padding-top: 0;
+}
+
+/* Owl Dots */
+
+.owl-dot span,
+.owl-dots span {
+  border-color: #00bcd4;
+}
+
+.owl-dot.active span {
+  background: #00bcd4;
+}

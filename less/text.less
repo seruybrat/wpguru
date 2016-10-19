@@ -1,0 +1,36 @@
+#block__text {
+  h2, h1 {
+    display: inline-block;
+    position: relative;
+    padding: 0 30px;
+    text-align: center;
+    &::after, &::before {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(images/title.png) repeat;
+    }
+    &::after {
+      left: 100%;
+    }
+    &::before {
+      right: 100%;
+    }
+  }
+  .text-center {
+    overflow: hidden;
+  }
+  .text-block-right, .container-narrow {
+    margin: 35px 0;
+  }
+  .text-near-img {
+    font-size: 24px;
+    &::after, &::before {
+      display: none;
+    }
+  }
+}

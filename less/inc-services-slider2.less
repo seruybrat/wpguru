@@ -1,0 +1,82 @@
+.abcp_services-slider {
+	.owl-controls {
+		margin: 0;
+		padding-top: 10px;
+		clear: both;
+		.owl-page {
+			span {
+				border: 2px solid #fff;
+				border-radius: 50%;
+				background: transparent;
+			}
+			&.active span, &:hover span {
+				border-color: #fff;
+				background: #fff;
+			}
+		}
+	}
+	@media (min-width: 992px) {
+		.section-title {margin-bottom: 100px;}
+		.owl-controls {padding-top: 30px;}
+		&__pagination {
+	    // padding-top: 60px;
+	    padding-bottom: 120px;
+	    position: relative;
+		}
+	}
+}
+
+/*SERVICES SLIDER: SLIDER 1 (images)*/
+.abcp_services-slider-1 {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: url(images/services-slider/bg.png) no-repeat top;
+	max-width: 693px;
+	max-height: 403px;
+	background-size: contain;
+	&__image {
+		padding-top: 3.2%;
+		padding-bottom: 11.8%;
+		padding-left: 13.2%;
+		padding-right: 13.3%;
+	}
+	li { // if disabled js
+		display: none;
+		&:first-child {display: block;}
+	}
+}
+
+/*SERVICES SLIDER: SLIDER 2 (texts)*/
+.abcp_services-slider-2 {
+	margin: 15px 0 0;
+	padding: 0;
+	list-style-type: none;
+	&__title {
+		margin-bottom: 20px;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__text {
+		margin-bottom: 15px;
+		font-size: 14px;
+		color: #fff;
+	}
+	&__price {
+		font-style: italic;
+		color: #fff;
+		text-align: right;
+		margin-right: 5px;
+		span {font-size: 30px;}
+	}
+	@media (min-width: 768) {
+		&__text {font-size: 18px;}
+	}
+}
+.abcp_services-slider {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}

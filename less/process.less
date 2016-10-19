@@ -1,0 +1,59 @@
+/*--------------------------------------------------
+    [Process v2]
+----------------------------------------------------*/
+
+.process {
+  background: #f7f8fa;
+  & .heading-v2-title {
+    font-size: 28px;
+    font-style: italic;
+    font-family: Droid Serif, serif;
+  }
+  &-v2 {
+    text-align: center;
+    &-element {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      width: 229px;
+      height: 229px;
+      font-size: 18px;
+      color: #34343c;
+      text-align: center;
+      background: #fff;
+      vertical-align: middle;
+      padding: 21px;
+      margin-bottom: 20px;
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+      span {
+        color: #b5c234;
+        font-size: 60px;
+        padding-top: 30px;
+      }
+    }
+    &-title {
+      font-size: 18px;
+      padding-top: 10px;
+      font-weight: 300;
+    }
+    &-border {
+      position: relative;
+      &:after {
+        position: absolute;
+        top: 110px;
+        left: 310px;
+        display: block;
+        width: 137px;
+        content: url(images/dot_arrow.png);
+        @media (max-width: 1200px) {
+          left: 210px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

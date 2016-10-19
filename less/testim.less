@@ -1,0 +1,34 @@
+.testimonials {
+  padding: 55px 0 30px;
+}
+.testimonials p{
+  margin-bottom: 57px;
+}
+
+.content-page {
+  margin-top: 80px;
+  &.order {
+    margin-top: 50px;
+  }
+}
+.fa-star,
+.fa-star-half-o{
+  color: #aed581;
+}
+.quote{
+  font-size: 60px;
+  line-height: 53px;
+}
+.testimonials .col-md-4.md-margin-b-30:not(:last-child):after{
+  content: '';
+  border-right: 1px solid #eaeaea;
+  display: inline-block;
+  height: 100px;
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
